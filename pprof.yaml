@@ -1,0 +1,10 @@
+image:
+  registry: "docker.io"
+  repository: "afdesk/trivy-operator"
+  tag: "add-profiling"
+operator:
+  scanJobTTL: 30m
+trivy:
+  resources:
+    limits:
+       memory: 1Gi

@@ -1,0 +1,14 @@
+image:
+  registry: "docker.io"
+  repository: "afdesk/trivy-operator"
+  tag: "login"
+operator:
+  scanJobTTL: 30m
+trivy:
+  dbRegistry: "docker.io"
+  dbRepository: "afdesk/private"
+  javaDbRegistry: "docker.io"
+  javaDbRepository: "afdesk/private"
+  resources:
+    limits:
+       memory: 1Gi

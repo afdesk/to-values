@@ -1,0 +1,16 @@
+image:
+  registry: "docker.io"
+  repository: "afdesk/trivy-operator"
+  tag: "arm64-fixTrivyConfig"
+operator:
+  scanJobTTL: 30m
+trivy:
+  timeout: "15m0s"
+  resources:
+    limits:
+       memory: 1Gi
+
+trivy:
+  configFile:
+    image:
+      platform: "linux/arm64"

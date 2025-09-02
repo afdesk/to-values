@@ -1,0 +1,13 @@
+image:
+  registry: "docker.io"
+  repository: "afdesk/trivy-operator"
+  tag: "arm64-printlogs"
+operator:
+  scanJobTTL: 30m
+
+trivyOperator:
+  scanJobCompressLogs: true
+trivy:
+  resources:
+    limits:
+       memory: 1Gi

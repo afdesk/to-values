@@ -1,0 +1,12 @@
+image:
+  registry: "docker.io"
+  repository: "afdesk/trivy-operator"
+  tag: "before2717"
+operator:
+  scanJobTTL: 30m
+#  logDevMode: true
+
+trivy:
+  resources:
+    limits:
+       memory: 1Gi

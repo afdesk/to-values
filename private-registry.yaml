@@ -9,6 +9,7 @@ trivy:
   dbRepository: "afdesk/private"
   javaDbRegistry: "docker.io"
   javaDbRepository: "afdesk/private"
+  dbRepositoryUsername: "afdesk"
   resources:
     limits:
        memory: 1Gi

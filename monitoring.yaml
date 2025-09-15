@@ -1,0 +1,13 @@
+# it's only for local helm chart
+operator:
+  scanJobTTL: 30m
+
+trivy:
+  timeout: "15m0s"
+  resources:
+    limits:
+       memory: 1Gi
+
+serviceMonitor:
+  # -- enabled determines whether a serviceMonitor should be deployed
+  enabled: true

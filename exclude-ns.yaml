@@ -1,0 +1,8 @@
+operator:
+  scanJobTTL: 30m
+#  logDevMode: true
+excludeNamespaces: "kube-*"
+trivy:
+  resources:
+    limits:
+       memory: 1Gi

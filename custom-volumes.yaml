@@ -20,4 +20,4 @@ trivyOperator:
   scanJobCustomVolumes:
    - name: var-lib-etcd
      hostPath:
-     path: /var/lib/etcd
+        path: /var/lib/etcd

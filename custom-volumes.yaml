@@ -1,0 +1,23 @@
+image:
+  registry: "docker.io"
+  repository: "afdesk/trivy-operator"
+  tag: "main"
+operator:
+  scanJobTTL: 30m
+#  logDevMode: true
+
+trivy:
+  timeout: "15m0s"
+  resources:
+    limits:
+       memory: 1Gi
+
+trivyOperator:
+  scanJobCustomVolumesMount:
+   - name: var-lib-etcd
+     mountPath: /var/lib/etcd
+     readOnly: true
+  scanJobCustomVolumes:
+   - name: var-lib-etcd
+     hostPath:
+     path: /var/lib/etcd

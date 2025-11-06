@@ -1,0 +1,18 @@
+image:
+  registry: "docker.io"
+  repository: "afdesk/trivy-operator"
+  tag: "main"
+operator:
+  scanJobTTL: 30m
+#  logDevMode: true
+
+trivy:
+  image:
+    registry: mirror.gcr.io
+    repository: afdesk/my-trivy
+    tag: concurentdb
+
+  timeout: "15m0s"
+  resources:
+    limits:
+       memory: 1Gi

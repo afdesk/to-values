@@ -3,6 +3,10 @@ operator:
   scanJobTTL: 30m
 
 trivy:
+  configFile:
+    debug: true
+    cache:
+      backend: "memory"
   timeout: "15m0s"
   resources:
     limits:
